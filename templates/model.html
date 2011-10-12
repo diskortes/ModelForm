@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+
+{%block t%}
+<title>My ModelForm</title>
+{%endblock%}
+
+{%block content%}
+<form method="post" action="">
+	<table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Save">
+</form>
+{%endblock%}
